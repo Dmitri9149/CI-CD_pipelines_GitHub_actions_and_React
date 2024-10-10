@@ -1,5 +1,5 @@
 # based on the code from here https://qaautomation.expert/2024/01/03/how-to-run-robot-framework-in-github-actions/
-name: Robot Framework Selenium Simple 
+name: Robot Framework Selenium Open Close 
 on:
   push:
     branches: [ "main" ]
