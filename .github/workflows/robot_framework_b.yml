@@ -27,7 +27,8 @@ jobs:
           pip install robotframework-seleniumlibrary
    
       - name: Test with RobotFramework
-        run: robot robot/check_invoices.robot  
+#        run: robot robot/check_invoices.robot  
+        run: robot/simple_example_selenuim_library.robot
          
       - name: Test Report Generation
         uses: actions/upload-artifact@v4
