@@ -5,5 +5,5 @@ Library           SeleniumLibrary
 
 *** Test Cases ***
 Valid Login
-    Open Browser     https://google.fr    Chrome
+    Open Browser     https://google.fr    headlesschrome
     Close Browser
