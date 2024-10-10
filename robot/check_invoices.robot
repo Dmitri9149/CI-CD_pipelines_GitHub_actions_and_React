@@ -5,7 +5,7 @@ Library           SeleniumLibrary
 *** Test Cases ***
 Check invoice manager page 
     Comment    Learn how to check invoice manager page 
-    Go To    http://inv.beaufortfairmont.com/ 
+    Go To   http://inv.beaufortfairmont.com/  
     Page Should Contain    Invoice Manager
 #    Navigate to Invoice Page
     My Log to Console  
