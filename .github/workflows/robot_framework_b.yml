@@ -28,7 +28,7 @@ jobs:
    
       - name: Test with RobotFramework
 #        run: robot robot/check_invoices.robot  
-        run: robot/simple_example_selenuim_library.robot
+        run: robot/simple_example_selenium_library.robot
          
       - name: Test Report Generation
         uses: actions/upload-artifact@v4
