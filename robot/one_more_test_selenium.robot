@@ -5,4 +5,4 @@ Library           SeleniumLibrary
 
 *** Test Cases ***
 Valid Login
-    Open Browser     https://google.fr    chrome
+    Open Browser     https://google.fr    selenium
