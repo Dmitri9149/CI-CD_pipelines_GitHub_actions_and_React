@@ -1,5 +1,6 @@
 # from https://fullstackopen.com/en/part11
-name: Hello World!
+
+name: Deployment pipeline
 
 on:
   push:
@@ -7,9 +8,7 @@ on:
       - main
 
 jobs:
-  hello_world_job:
+  simple_deployment_pipeline:
     runs-on: ubuntu-20.04
     steps:
-      - name: Say hello
-        run: |
-          echo "Hello World!"
+      - uses: actions/checkout@v4
