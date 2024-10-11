@@ -53,7 +53,7 @@ jobs:
 
       - name: Test with RobotFramework
 #        run: robot robot/check_invoices.robot  
-        run: robot robot/selenium_open_close_dev_local.robot
+        run: robot robot/selenium_open_close_dev_server.robot
          
       - name: Test Report Generation
         uses: actions/upload-artifact@v4
