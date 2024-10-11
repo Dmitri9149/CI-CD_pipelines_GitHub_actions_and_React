@@ -20,5 +20,5 @@ jobs:
       - name: Build 
         run: npm run build
       - name: Runs App
-        run: npm run dev
-      - run: killall node
+        run: npm run dev | curl http://localhost:5173 &&
+#      - run: killall node
