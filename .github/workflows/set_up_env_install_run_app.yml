@@ -20,5 +20,8 @@ jobs:
       - name: Build 
         run: npm run build
       - name: Runs App
-        run: npm run dev | curl http://localhost:5173
+        run: | 
+          npm start &
+          sleep 10 && 
+          curl http://localhost:5173
 #      - run: killall node
