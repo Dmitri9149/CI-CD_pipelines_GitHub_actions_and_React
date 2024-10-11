@@ -54,7 +54,7 @@ jobs:
           pip install robotframework-seleniumlibrary
       - name: Runs App
         run: | 
-          npm run dev
+          npm run dev &
       - name: Curl app
         run: curl http://localhost:5173
 
