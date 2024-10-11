@@ -20,7 +20,7 @@ jobs:
         run: npm run lint
       - name: Build 
         run: npm run build
-      - name: Runs App
+#      - name: Runs App
 #        run: | 
 #          npm run dev &
 #          sleep 10 
