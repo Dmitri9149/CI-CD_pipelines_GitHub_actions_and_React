@@ -34,7 +34,7 @@ jobs:
     steps: 
       - name: Runs App
         run: | 
-          npm run dev &
+          npm run dev
 #          sleep 10 
 #          && 
 #          curl http://localhost:5173
