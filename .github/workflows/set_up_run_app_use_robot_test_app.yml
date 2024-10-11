@@ -30,7 +30,7 @@ jobs:
 
   test:
     runs-on: ubuntu-latest
-     
+    needs: set_up_install_run_terminate  
     steps: 
       - name: Runs App
         run: | 
