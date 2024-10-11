@@ -32,6 +32,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: set_up_install_run_terminate  
     steps: 
+      - name: What is in folders 
+        run: ls -l 
       - name: Runs App
         run: | 
           npm run dev
