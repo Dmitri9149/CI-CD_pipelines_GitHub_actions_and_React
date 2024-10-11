@@ -35,7 +35,7 @@ jobs:
       - name: Runs App
         run: | 
           npm run dev &
-          sleep 10 
+#          sleep 10 
 #          && 
 #          curl http://localhost:5173
 
@@ -50,6 +50,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install robotframework
           pip install robotframework-seleniumlibrary
+      - name: Curl app
+        run: curl http://localhost:5173
 
       - name: Test with RobotFramework
 #        run: robot robot/check_invoices.robot  
