@@ -19,5 +19,3 @@ jobs:
         run: npm run lint
       - name: Runs App
         run: npm run dev
-      - name: Close App
-        run: CTRL + C
