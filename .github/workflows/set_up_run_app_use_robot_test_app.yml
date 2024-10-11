@@ -62,7 +62,7 @@ jobs:
 
       - name: Test with RobotFramework
 #        run: robot robot/check_invoices.robot  
-        run: testing_a.robot
+        run: robot testing_a.robot
          
       - name: Test Report Generation
         uses: actions/upload-artifact@v4
