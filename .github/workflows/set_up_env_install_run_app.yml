@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  simple_deployment_pipeline:
+  set_up_install_run_terminate:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v4
@@ -14,10 +14,10 @@ jobs:
         with:
           node-version: '20'
       - name: Install dependencies 
-        run: npm install  
+        run: npm ci  
       - name: Check style
         run: npm run lint
       - name: Runs App
-        run: pnpm dev
+        run: npm run dev
       - name: Close App
         run: CTRL + C
