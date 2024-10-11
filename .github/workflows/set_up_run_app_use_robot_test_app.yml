@@ -31,7 +31,14 @@ jobs:
   test:
     runs-on: ubuntu-latest
      
-    steps:
+    steps: 
+      - name: Runs App
+        run: | 
+          npm run dev &
+          sleep 10 
+#          && 
+#          curl http://localhost:5173
+
       - uses: actions/checkout@v3
       - name: Set up Python 3.12.1
         uses: actions/setup-python@v3
