@@ -64,7 +64,7 @@ jobs:
 
 # ------------------         
       - uses: browser-actions/setup-chrome@v1
-      - run: chrome    http://localhost:5173 
+      - run: headlesschrome    http://localhost:5173 
 # ------------------
 
       - name: Test with RobotFramework
