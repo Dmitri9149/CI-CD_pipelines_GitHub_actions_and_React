@@ -14,12 +14,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-# ------------------          
-      - uses: browser-actions/setup-chrome@v1
-        id: setup-chrome
-      - run: |
-          ${{ steps.setup-chrome.outputs.chrome-path }} --version
-# ------------------
+
       - name: Install dependencies 
         run: npm ci  
       - name: Check style
@@ -66,6 +61,13 @@ jobs:
           npm run dev &
       - name: Curl app
         run: curl http://localhost:5173
+
+# ------------------          
+      - uses: browser-actions/setup-chrome@v1
+        id: setup-chrome
+      - run: |
+          ${{ steps.setup-chrome.outputs.chrome-path }}   http://localhost:5173/
+# ------------------
 
       - name: Test with RobotFramework
 #        run: robot robot/check_invoices.robot  
