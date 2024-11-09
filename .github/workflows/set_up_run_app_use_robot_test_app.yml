@@ -56,16 +56,18 @@ jobs:
           pip install robotframework
           pip install robotframework-seleniumlibrary
           pip install robotframework-requests
+      - name: Install dependencies
+        run: |
+            set -ex
+            wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+            sudo apt install ./google-chrome-stable_current_amd64.deb
+            pip install msedge-selenium-tools
       - name: Runs App
         run: | 
           npm run dev &
       - name: Curl app
         run: curl http://localhost:5173
 
-# ------------------         
-      - uses: browser-actions/setup-chrome@v1
-      - run: headlesschrome    http://localhost:5173 
-# ------------------
 
       - name: Test with RobotFramework
 #        run: robot robot/check_invoices.robot  
