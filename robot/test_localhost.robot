@@ -11,4 +11,4 @@ Library           RequestsLibrary
 #    Close Browser
 *** Test Cases ***
 Quick Get Request Test
-    ${response}=    GET    http://127.0.0.1:5173/
+    ${response}=    GET    http://localhost:5173/
