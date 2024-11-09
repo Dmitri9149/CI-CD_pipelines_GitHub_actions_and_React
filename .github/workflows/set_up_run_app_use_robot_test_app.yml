@@ -63,5 +63,5 @@ jobs:
       - name: Test with RobotFramework
 #        run: robot robot/check_invoices.robot  
 #        run: robot testing_a.robot
-        run: robot robot/selenium_open_close.robot 
+        run: robot robot/test_localhost.robot 
          
