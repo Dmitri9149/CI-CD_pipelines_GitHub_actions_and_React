@@ -62,7 +62,9 @@ jobs:
       - name: Curl app
         run: curl http://localhost:5173
 
-# ------------------          
+# ------------------ 
+      - name: Install xfbf
+        run:  apt-get update -y \ && apt-get -y install xvfb \ && rm -rf /var/lib/apt/lists/* /var/cache/apt/*         
       - uses: browser-actions/setup-chrome@v1
         id: setup-chrome
       - run: |
