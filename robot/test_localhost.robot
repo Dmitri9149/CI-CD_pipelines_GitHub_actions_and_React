@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation     Simple example using SeleniumLibrary.
+Documentation     Simple example with localhost url.
 Library           SeleniumLibrary
 Library           RequestsLibrary
 
