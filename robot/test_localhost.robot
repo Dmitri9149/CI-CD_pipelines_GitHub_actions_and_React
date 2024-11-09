@@ -12,3 +12,4 @@ Library           RequestsLibrary
 *** Test Cases ***
 Quick Get Request Test
     ${response}=    GET    http://localhost:5173/
+    Go To     http://localhost:5173/ 
