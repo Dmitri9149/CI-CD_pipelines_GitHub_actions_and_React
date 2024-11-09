@@ -45,7 +45,7 @@ jobs:
 
 #      - uses: actions/checkout@v3
       - name: Set up Python 3.12.1
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v5
         with:
           python-version: 3.12.1
    
@@ -55,19 +55,13 @@ jobs:
           pip install robotframework
           pip install robotframework-seleniumlibrary
       - name: Runs App
-        run: | 
-          npm run dev &
+        run: npm run dev 
       - name: Curl app
         run: curl http://localhost:5173
 
       - name: Test with RobotFramework
 #        run: robot robot/check_invoices.robot  
 #        run: robot testing_a.robot
-        run: robot robot/one_more_test_selenium_robot.robot 
+        run: robot robot/just_variables.robot 
          
-#      - name: Test Report Generation
-#        uses: actions/upload-artifact@v4
-#        if: success() || failure()
-#        with:
-#          name: Report                # Name of the folder
-#          path: report.html           # Path to test results
+
