@@ -54,6 +54,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install robotframework
           pip install robotframework-seleniumlibrary
+          pip install robotframework-requests
       - name: Runs App
         run: | 
           npm run dev &
