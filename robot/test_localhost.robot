@@ -7,7 +7,7 @@ Library           RequestsLibrary
 Quick Get Request Test
     ${response}=    GET    http://localhost:5173/
 Just Open Browser  
-    Open Browser    http://127.0.0.1:5173/    headlesschrome
+    Open Browser    http://127.0.0.1:5173/    chrome
     Maximize Browser Window
     Set Selenium Implicit Wait    5
     Close Browser
