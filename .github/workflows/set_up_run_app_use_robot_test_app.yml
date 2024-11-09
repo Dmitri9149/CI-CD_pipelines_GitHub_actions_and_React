@@ -64,7 +64,7 @@ jobs:
             google-chrome --version 
             pip install selenium
             pip install webdriver-manager
-            pip install msedge-selenium-tools
+#            pip install msedge-selenium-tools
       - name: Runs App
         run: | 
           npm run dev &
